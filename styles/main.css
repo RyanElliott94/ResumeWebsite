@@ -1,0 +1,219 @@
+body {
+	background: #363A47;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	height: 100%;
+	color: #464646;
+	font-size: .9rem;
+	/*background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("C:/Users/Skint_94/Documents/Web Dev Course/My journey resume/assets/imgs/bg_05.jpg");*/
+}
+
+html {
+	position: relative;
+	height: 100%;
+}
+
+.table {
+	color: #6b6b6b;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+h2 {
+	font-weight: 500;
+}
+
+
+.navbar {
+	background-color: #69D4AC;
+	font-size: 1rem;
+}
+
+.nav-link, .navbar-brand, a{
+	color: white;
+}
+.nav-link:hover {
+	color: #464646;
+}
+
+.nav-link:hover, a:hover {
+	color: #464646;
+}
+
+.main-content {
+	/*#EFEFEF*/
+	background: #f7f7f7;
+	margin-top: 120px;
+	border-radius: 0 .2rem .2rem .2rem;
+}
+
+.home-content {
+	background: #f7f7f7;
+	margin-top: 120px;
+	border-radius: .3rem .3rem .3rem .3rem;
+}
+
+.jumbotron {
+	background: #f7f7f7;
+}
+
+.signupForm{
+	/*#EFEFEF*/
+	background: #f7f7f7;
+    padding-left: 50px;
+    padding-right: 50px;
+	margin-top: 20%;
+	border-radius: .3rem .3rem .3rem .3rem;
+}
+
+.commentForm{
+	/*#EFEFEF*/
+	background: #f7f7f7;
+    padding-left: 50px;
+    padding-right: 50px;
+	margin-top: 1%;
+	border-radius: .3rem .3rem .3rem .3rem;
+}
+
+.loginForm{
+	background: #f7f7f7;
+	border-radius: .3rem .3rem .3rem .3rem;
+	width: 40%;
+}
+
+.sub-comment-form{
+	background: #f7f7f7;
+	border-radius: .3rem .3rem .3rem .3rem;
+	width: 40%;
+}
+
+.createForm{
+	/*#EFEFEF*/
+	background: #f7f7f7;
+    padding-left: 50px;
+    padding-right: 50px;
+	margin-top: 50%;
+	border-radius: .3rem .3rem .3rem .3rem;
+}
+
+.side-content {
+	background: #f7f7f7;
+    margin-top: 120px;
+	border-radius: .4rem 0 0 .4rem;
+}
+
+.instructor-info li {
+	padding: 5px 5px 5px;
+}
+.side-content img {
+	border-radius: .4rem 0 0 0;
+}
+.card-body {
+	padding-bottom: 0;
+}
+.quick-stat {
+	background: #EEEEEE;
+	border-top: 10px solid #FF5E61;
+}
+
+.selfie {
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+.going {
+	color: red;
+}
+
+.complete {
+	color: green;
+}
+
+.hideText-btn-0, .hideText-btn-1, .showText-btn-0, .showText-btn-1, .bg-signup, .bg-login, .bg-logout, .sub-comment-btn{
+	color: white;
+	background-color: #69D4AC;
+}
+
+.titleBody{
+	font-size: 20px;
+}
+
+.commentBody{
+	white-space: pre-wrap;
+	font-size: 1rem;
+}
+
+.close {
+	color: #FF2772;
+}
+
+.close:hover{
+	color: #464646;
+}
+
+.dateBody{
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+.commentText {
+	margin-top: -18px;
+	margin-left: 50px;
+}
+
+.titleText {
+	margin-top: -10px;
+	margin-left: 50px;
+}
+
+.error {
+	color: white;
+	background-color: #f74848;
+}
+
+.messageBox {
+	white-space: pre-wrap;
+}
+
+tbody a {
+	color: #464646;
+}
+
+tbody a:hover {
+	color: #949494;
+}
+
+.cv-links{
+	font-size: 15px;
+    color: #464646;
+}
+
+.cv-links:hover {
+	color: #949494;
+}
+
+.course-info-left a {
+	color: #464646;
+}
+
+.course-info-left a:hover {
+	color: #949494;
+}
+
+.divide-line {
+	width: 70%;
+	height: 4px;
+	background-color: #464646;
+	/*border-radius: 100%;*/
+}
+/*
+.selfie {
+	background-size: 100% 100%;
+	text-align: center;
+    height: 250px;
+}*/
