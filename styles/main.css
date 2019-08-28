@@ -30,7 +30,6 @@ h2 {
 
 .navbar {
 	background-color: #69D4AC;
-	font-size: 1rem;
 }
 
 .nav-link, .navbar-brand, a{
@@ -51,7 +50,14 @@ h2 {
 	border-radius: 0 .2rem .2rem .2rem;
 }
 
-.home-content {
+.home-page {
+	/*#EFEFEF*/
+	background: #f7f7f7;
+	width: 65%;
+	border-radius: 0 0 .5rem .5rem;
+}
+
+.home-content, .project-content {
 	background: #f7f7f7;
 	margin-top: 120px;
 	border-radius: .3rem .3rem .3rem .3rem;

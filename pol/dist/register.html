@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Political - Register</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css"></script>
+
+</head>
+<body>
+		<nav class="navbar navbar-light p-1 navbar-expand-sm shadow-sm">
+        <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-flex mx-auto p-0">
+            <a class="navbar-brand align-self-center p-0" href="index.html">
+                <img  width="30" height="30" class="d-inline-block align-top nav" alt="">
+                The Political
+              </a>
+              
+        <div class="collapse navbar-collapse p-0" id="navbarNav">
+          <ul class="navbar-nav p-0">
+            <li class="nav-item align-self-center text-center">
+              <a class="nav-link p-0" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form">
+            <input class="form-control search-users rounded-pill p-2" type="text" id="searchResults" placeholder="Find Someone" aria-label="Find Someone">
+            <div class="results bg-white ml-2 mt-1 rounded-lg">
+              </div>
+        </form>
+
+        <form class="form-inline navbar-login navbar-light">
+        <a href="./register.html"><button type="button" class="btn btn-sm bg-transparent align-self-center logged-in" id="nav-signup">Register</button></a>
+        <a href="./login.html"><button type="button" class="btn btn-sm bg-transparent align-self-center logged-in" id="nav-login">Log In</button></a>
+        </form>
+      </div>
+      </nav>
+
+
+
+<div class="d-flex bg-transparent h-100 flex-nowrap m-0 mx-auto">
+   <div class="registerContainer bg-light p-3 rounded-lg mt-5 shadow-lg align-self-start mx-auto w-50">
+    <form>
+        <div class="form-group">
+        <label for="nameLab">Full Name</label>
+        <input type="text" autocomplete="name" class="form-control" id="nameLab" aria-describedby="emailHelp" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="emailLab">Email address</label>
+          <input type="email" autocomplete="email" class="form-control" id="emailLab" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="passLab">Password</label>
+          <input type="password" autocomplete="current-password" class="form-control" id="passLab" placeholder="Password">
+        </div>
+        <button type="button" class="btn btn-outline-dark rounded-lg btn-register">Sign Up</button>
+
+        <div class="alert fade show error mt-2" style="display: none"></div>
+      </form>
+   </div>
+</div>
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
