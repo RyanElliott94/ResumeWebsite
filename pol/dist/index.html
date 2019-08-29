@@ -33,7 +33,7 @@
         </div>
 
         <form class="form">
-            <input class="form-control search-users rounded-pill p-2" type="text" id="searchResults" placeholder="Find Someone" aria-label="Find Someone">
+            <input class="form-control search-users rounded-pill p-2" type="text" id="searchResults" placeholder="Find Someone" aria-label="Find Someone" data-toggle="tooltip" data-html="true" title="The 'Search' feature currently only accepts the full username of another user but as it works I haven't done much else to it! You can test it by typing 'Test User'">
             <div class="results bg-white ml-2 mt-1 rounded-lg">
               </div>
         </form>
@@ -67,11 +67,30 @@
               <div class="alert fade show error mt-2" style="display: none"></div>
             </form>
   </div> -->
-
+  <div class="modal infoMod fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hello!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>To help you through the preview of the site. If you hover over titles you will see some information about the feature.</p>
+          <p>So for example, If you hover over "News Feed" on the homepage, you will be able to read some info on the "News Feed" section of the page.</p>
+          <img class="mod-prev w-100" src="./imgs/tool-priv.png" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary infoMod-btn" data-dismiss="modal">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="d-flex hide-home home-page shadow-sm flex-nowrap mx-5 h-auto mx-auto">
 
   <!-- PHOTO VIEWER!! -->
-    <div class="modal fade image-pop bg-dark" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal fade image-pop bg-dark" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-xl bg-dark rounded-lg">
           <div class="modal-content bg-dark">
             <img src="" class="img img-thumbnail view-image rounded-lg w-100 h-auto p-3" alt="">
@@ -81,12 +100,12 @@
 
   <!-- FIRST SECTION! -->
     <div class="p-3 w-50 align-self-start hashtagPanel">
-      <h3 class="text-center">Hashtags</h3>
+      <h3 class="text-center" data-toggle="tooltip" data-html="true" title="This 'Hashtags' panel has yet to be added but once done it will fetch and display the most popular hashtags.">Hashtags</h3>
     </div>
 
     <!-- MIDDLE SECTION!  -->
         <div class="border-left border-right border-bottom rounded-sm mx-3 p-3 w-100 bg-white main-content align-self-start">
-            <h3 class="text-center">News Feed</h3>
+            <h3 class="text-center newsFeed" data-toggle="tooltip" data-html="true" title="This is pretty much self-explanatory. The 'News Feed' consists of 2 tabs. 'MyPosts' & 'Friends Posts'.">News Feed</h3>
     
             <div class="d-flex justify-content-center rounded-lg newPostContainer border w-100 mx-auto p-3 clearfix">
                 <div class="form-group">
@@ -137,7 +156,8 @@
 
      <!-- NEWS FEED! -->
       <div class="align-self-start p-3 w-50">
-          <h3 class="text-center topStories">Top Stories</h3>
+          <h3 class="text-center topStories" data-toggle="tooltip" data-html="true" title="'Top Stories' is currently an ajax call from the FoxNews website which receives the articles relation to the politics page which receives the title, article link and article thumbnail.">Top Stories</h3>
+          <p class="text-center">Courtesy of FoxNews.com</p>
      </div>
 </div>
 

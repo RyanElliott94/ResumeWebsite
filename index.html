@@ -6,7 +6,10 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 	    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
-	    <script type="text/javascript" src="assets/js/lib/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="assets/js/lib/jquery-3.4.1.min.js"></script>
+      
+      <link rel="stylesheet" type="text/css" href="styles/loading-bar.css"/>
+      <script type="text/javascript" src="assets/js/lib/loading-bar.js"></script>
 		</head>
 		<body class="welcome-body">
 			
@@ -17,22 +20,22 @@
   <div class="container p-0">
   <div class="collapse navbar-collapse w-auto" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item text-center">
+      <li class="nav-item text-center active">
         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item text-center">
         <a class="nav-link" href="about.html">About Me</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item text-center">
         <a class="nav-link" href="project.html">The Project</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item text-center">
         <a class="nav-link" href="comments.html">Feedback</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item text-center">
         <a class="nav-link" href="my-cv.html">My CV</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item text-center">
         <a class="nav-link" href="udemy-journey.html">Udemy</a>
       </li>
     </ul>
@@ -45,27 +48,22 @@
 </div>
 </nav>
 
-
+<!-- 
        <div class="d-flex h-100 home-page mx-auto p-2">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       </div>
-	<!-- <div class="container welcome-container home-content" style="display:none;">
-		<section class="jumbotron text-center m-sm-1">
+       </div> -->
+
+	<div class="container bg-transparent welcome-container home-content" style="display:none;">
+		<section class="jumbotron bg-transparent text-center m-sm-1">
 	        <h1 class="display-3 pt-0 mt-0">Welcome</h1>
-	        <img oncontextmenu="return false" class="text-center img-thumbnail rounded-circle" width="250px" height="250px" src="assets/imgs/me-01.jpg">
+	        <img oncontextmenu="return false" class="text-center img-thumbnail rounded-circle home-img" width="250px" height="250px" src="assets/imgs/me-00.jpg">
 	        <p class="mt-4">Hello, My name is Ryan, If you happen to be seeing this, then it is probably because I have applied to work at your company! I created this website to give you more of an in-depth look into my journey, life and what I can do as a web developer. I have tried to implement everything I know and have learnt over the past few months, so you will see me use the likes of <strong>HTML, CSS, jQuery, JavaScript, Bootstrap 4 & Firebase!</strong>
 			    </p>
 			    <p class="lead">
 			    	To find out much more about me, click the button below
 			    </p>
-	        <a href="about.html" class="btn btn-primary">Click Me!</a>
+	        <a href="about.html" class="btn btn-outline-light">Click Me!</a>
 	    </section>
-	</div> -->
+	</div>
             <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
             <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
 		    <script type="text/javascript" src="assets/js/script.js"></script>

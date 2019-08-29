@@ -11,46 +11,46 @@
 </head>
 <body>
 		<nav class="navbar nav-container navbar-expand-sm p-0 m-0">
-  <button class="navbar-toggler navbar-dark ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="container p-0">
-  <div class="collapse navbar-collapse w-auto" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item text-center">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link" href="about.html">About Me</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="project.html">The Project</a>
-      </li>
-      <li class="nav-item text-center active">
-      	<a class="nav-link text-center" href="comments.html">Feedback <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="my-cv.html">My CV</a>
-      </li>
-      <li class="nav-item text-center">
-        <a class="nav-link" href="udemy-journey.html">Udemy</a>
-      </li>
-    </ul>
-  </div>
-  <form class="form-inline navbar-login">
-  <button type="button" class="btn btn-sm m-2 bg-logout" id="nav-logout" style="display: none">Log Out</button>
-  <button type="button" class="btn btn-sm m-2 bg-signup" id="nav-signup" style="display: none">Register</button>
-  <button type="button" class="btn btn-sm m-2 bg-login" id="nav-login" style="display: none">Log In</button>
-  </form>
-</div>
-</nav>
+        <button class="navbar-toggler navbar-dark ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container p-0">
+        <div class="collapse navbar-collapse w-auto" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item text-center active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="project.html">The Project</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="comments.html">Feedback</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="my-cv.html">My CV</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="udemy-journey.html">Udemy</a>
+            </li>
+          </ul>
+        </div>
+        <form class="form-inline navbar-login">
+        <button type="button" class="btn btn-sm m-2 bg-logout" id="nav-logout" style="display: none">Log Out</button>
+        <button type="button" class="btn btn-sm m-2 bg-signup" id="nav-signup" style="display: none"><a href="comments.html">Register</a></button>
+        <button type="button" class="btn btn-sm m-2 bg-login" id="nav-login" style="display: none"><a href="comments.html">Log In</a></button>
+        </form>
+      </div>
+      </nav>
 
 <div class="container main">
   <div class="row justify-content-center">
   <div class="carousel col col-lg-5 col-xl-3 mx-auto slide register-cont" data-ride="carousel" data-interval="false" style="display: none">
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <form class="signupForm p-4">
+    <form class="signupForm bg-transparent p-4">
       <p class="display-3 text-center">Welcome!</p>
       <p class="text-center">I created this page so you can give me your opinions, critiques and maybe some advice about the website, my story and why your going to hire me! ;)</p>
   <div class="form-group">
@@ -61,8 +61,8 @@
     <label for="password">Password</label>
     <input type="password" class="form-control pass-text-box" id="password" placeholder="Password">
   </div>
-  <button type="button" class="btn btn-primary btn-sm" id="signup">Register</button>
-  <button type="button" class="btn btn-success btn-sm" id="login">Log In</button>
+  <button type="button" class="btn btn-outline-danger btn-sm" id="signup">Register</button>
+  <button type="button" class="btn btn-outline-light btn-sm" id="login">Log In</button>
   <button type="button" class="btn btn-sm float-right" id="guest">Continue as a guest</button>
     
   <div class="alert fade show error mt-2" style="display: none">
@@ -89,7 +89,7 @@
     </div>
   </div>
 </div>
- <div class="col col-lg-10 commentForm comment h-100">
+ <div class="col col-lg-10 commentForm bg-transparent comment h-100">
   <div class="row listView w-100 py-md-4" style="display: none">
     <ul class="px-0" style="list-style-type:none">
       <li>
@@ -106,24 +106,25 @@
       </li>
       <li class="commentText">
         <p class="commentBody p-2"></p>
+        <hr>
       </li>
     </ul>   
     </div>
     </div>
 
-    <div class="col col-sm-12 col-lg-10 h-md-100 sub-comment-form m-sm-1 mt-3">
+    <div class="col col-sm-12 col-lg-10 h-md-100 bg-transparent sub-comment-form m-sm-1 mt-3">
   <form>
     <div class="form-row comment mx-auto p-md-3 pb-md-5 h-100" style="display: none">
     <div class="form-group">
       <label for="inputTitle" class="pt-2">Title</label>
-      <input type="text" class="form-control titleBox" id="inputTitle" placeholder="Give your comment a title!">
+      <input type="text" class="form-control bg-transparent titleBox" id="inputTitle" placeholder="Give your comment a title!">
     </div>
     <div class="form-group">
       <label for="inputMessage">Message</label>
-      <textarea class="form-control messageBox" spellcheck="value" id="inputMessage" placeholder="Type out the comment here!"></textarea>
+      <textarea class="form-control bg-transparent messageBox" spellcheck="value" id="inputMessage" placeholder="Type out the comment here!"></textarea>
     </div>
     <div class="form-group float-right">
-    <button type="button" class="btn sub-comment-btn">Submit</button>
+    <button type="button" class="btn btn-outline-light sub-comment-btn">Submit</button>
 </div>
   </div>
 </form>

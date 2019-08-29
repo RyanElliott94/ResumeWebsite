@@ -155,7 +155,7 @@ firebase.initializeApp(firebaseConfig);
 		}
 
 		function initAnimantion(){
-		$(".d-flex").slideToggle(1300);
+		$(".udemy").slideToggle(1300);
 		ele.aboutContainer.slideToggle(1300);
 		ele.welcomeContainer.fadeToggle(1300);
 		$(".card").slideToggle(1300);

@@ -1,9 +1,12 @@
 body {
-	background: #363A47;
+	/* background: rgb(40, 43, 53); */
+	background-image: url("../assets/imgs/tri-bg-1.png");
+	background-attachment: fixed;
+	background-size: cover;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
 	height: 100%;
-	color: #464646;
+	color: whitesmoke;
 	font-size: .9rem;
 	/*background-repeat: no-repeat;
 	background-position: center center;
@@ -15,8 +18,36 @@ html {
 	height: 100%;
 }
 
+h1, h2, h3, h4 {
+	font-weight: bold;
+	background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main p{
+	color: white;
+}
+
+.display-3 {
+	font-weight: bold;
+	background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#guest {
+	color: white;
+}
+
+.main img {
+	object-fit: cover;
+}
+
+p {
+	color: whitesmoke;
+}
 .table {
-	color: #6b6b6b;
+	color: whitesmoke;
 }
 
 h1 {
@@ -28,51 +59,50 @@ h2 {
 }
 
 
-.navbar {
+/* .navbar {
 	background-color: #69D4AC;
-}
+} */
 
 .nav-link, .navbar-brand, a{
 	color: white;
 }
 .nav-link:hover {
-	color: #464646;
+	color: rgb(145, 145, 145);
 }
 
 .nav-link:hover, a:hover {
-	color: #464646;
+	color: rgb(145, 145, 145);
 }
 
-.main-content {
-	/*#EFEFEF*/
-	background: #f7f7f7;
-	margin-top: 120px;
-	border-radius: 0 .2rem .2rem .2rem;
+.bg-login, .bg-logout, .bg-signup {
+	color: white;
+}
+
+.bg-login:hover, .bg-logout:hover, .bg-signup:hover {
+	color: rgb(145, 145, 145);
+}
+
+.home-img {
+	object-fit: cover;
+	height: 250px;
+	width: 250px;
 }
 
 .home-page {
-	/*#EFEFEF*/
-	background: #f7f7f7;
-	width: 65%;
-	border-radius: 0 0 .5rem .5rem;
+width: 65%;
 }
+
+/* .main-content {
+	#EFEFEF*/
+	/* background: whitesmoke; */
+	/* margin-top: 120px; */
+	/* border-radius: 0 .2rem .2rem .2rem;
+} */
+
 
 .home-content, .project-content {
 	background: #f7f7f7;
 	margin-top: 120px;
-	border-radius: .3rem .3rem .3rem .3rem;
-}
-
-.jumbotron {
-	background: #f7f7f7;
-}
-
-.signupForm{
-	/*#EFEFEF*/
-	background: #f7f7f7;
-    padding-left: 50px;
-    padding-right: 50px;
-	margin-top: 20%;
 	border-radius: .3rem .3rem .3rem .3rem;
 }
 
@@ -85,11 +115,6 @@ h2 {
 	border-radius: .3rem .3rem .3rem .3rem;
 }
 
-.loginForm{
-	background: #f7f7f7;
-	border-radius: .3rem .3rem .3rem .3rem;
-	width: 40%;
-}
 
 .sub-comment-form{
 	background: #f7f7f7;
@@ -133,16 +158,11 @@ h2 {
 }
 
 .going {
-	color: red;
+	color: rgb(46, 129, 253);
 }
 
 .complete {
-	color: green;
-}
-
-.hideText-btn-0, .hideText-btn-1, .showText-btn-0, .showText-btn-1, .bg-signup, .bg-login, .bg-logout, .sub-comment-btn{
-	color: white;
-	background-color: #69D4AC;
+	color: rgb(70, 211, 70);
 }
 
 .titleBody{
@@ -152,14 +172,6 @@ h2 {
 .commentBody{
 	white-space: pre-wrap;
 	font-size: 1rem;
-}
-
-.close {
-	color: #FF2772;
-}
-
-.close:hover{
-	color: #464646;
 }
 
 .dateBody{
@@ -187,39 +199,44 @@ h2 {
 }
 
 tbody a {
-	color: #464646;
+	color: white;
 }
 
 tbody a:hover {
-	color: #949494;
+	color: rgb(145, 145, 145);
 }
 
 .cv-links{
 	font-size: 15px;
-    color: #464646;
+	background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .cv-links:hover {
-	color: #949494;
+	color: #ffffff;
 }
 
 .course-info-left a {
-	color: #464646;
+	color: white;
 }
 
 .course-info-left a:hover {
-	color: #949494;
+	color: rgb(145, 145, 145);
 }
 
 .divide-line {
 	width: 70%;
-	height: 4px;
-	background-color: #464646;
+	height: 6px;
+	background-color: rgb(40, 43, 53);
 	/*border-radius: 100%;*/
 }
-/*
-.selfie {
-	background-size: 100% 100%;
-	text-align: center;
+
+.self {
+	width: 100%;
     height: 250px;
-}*/
+}
+
+.progress-bar {
+	background-color: rgb(255, 45, 119);
+}
