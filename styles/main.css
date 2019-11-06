@@ -240,3 +240,7 @@ tbody a:hover {
 .progress-bar {
 	background-color: rgb(255, 45, 119);
 }
+
+.learning-left {
+	font-size: 15px;
+}

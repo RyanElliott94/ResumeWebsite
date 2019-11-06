@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Political - Home</title>
+	<title>Leave Your Feedback</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Patua+One&display=swap" rel="stylesheet">
@@ -9,88 +9,49 @@
 
 </head>
 <body>
-		<nav class="navbar navbar-light p-1 navbar-expand-sm shadow-sm">
+		<nav class="navbar navbar-light p-1 navbar-expand-sm shadow-sm w-100">
         <button class="navbar-toggler  ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="d-flex mx-auto p-0">
-            <a class="navbar-brand align-self-center p-0" href="index.html">
+            <a class="navbar-brand align-self-center p-0 d-none d-md-block" href="index.html">
                 <img  width="30" height="30" class="d-inline-block align-top nav" alt="">
-                The Political
+                <span class="nav-title">The Political</span>
               </a>
-              
         <div class="collapse navbar-collapse p-0" id="navbarNav">
           <ul class="navbar-nav p-0">
-            <li class="nav-item align-self-center text-center">
+            <li class="nav-item align-self-center">
               <a class="nav-link p-0" href="index.html">Home</a>
             </li>
-            <ul class="navbar-nav">
                 <li class="nav-item logged-out text-center">
                   <a class="nav-link p-0 ml-2" href="./profile.html">My Profile</a>
                 </li>
-                </ul>
+                    <li class="nav-item text-center">
+                        <form class="form d-block d-md-none w-100">
+                            <input class="form-control search-users rounded-pill p-2" type="text" id="searchResults" placeholder="Find Someone" aria-label="Find Someone">
+                            <div class="results bg-white ml-2 mt-1 rounded-lg">
+                              </div>
+                        </form>
+                    </li>
           </ul>
         </div>
-
-        <form class="form">
-            <input class="form-control search-users rounded-pill p-2" type="text" id="searchResults" placeholder="Find Someone" aria-label="Find Someone" data-toggle="tooltip" data-html="true" title="The 'Search' feature currently only accepts the full username of another user but as it works I haven't done much else to it! You can test it by typing 'Test User'">
+        <form class="form d-none d-md-block">
+            <input class="form-control search-users rounded-pill p-2" type="text" id="searchResults" placeholder="Find Someone" aria-label="Find Someone">
             <div class="results bg-white ml-2 mt-1 rounded-lg">
               </div>
         </form>
-
         <form class="form-inline navbar-login navbar-light">
         <button type="button" class="btn btn-sm  bg-transparent logged-out align-self-center" id="nav-logout">Log Out</button>
-      
         <a href="./register.html"><button type="button" class="btn btn-sm m-2 bg-transparent logged-in" id="nav-signup">Register</button></a>
         <a href="./login.html"><button type="button" class="btn btn-sm m-2 bg-transparent logged-in" id="nav-login">Log In</button></a>
         </form>
       </div>
       </nav>
 
-      <!-- <div class="no-user hide bg-light p-3 rounded-lg mt-5 shadow-lg align-self-start mx-auto w-50">
-          <form>
-              <div class="form-group">
-                <label for="emailLab">Email address</label>
-                <input type="email" autocomplete="email" class="form-control" id="emailLab" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <label for="passLab">Password</label>
-                <input type="password" autocomplete="current-password" class="form-control" id="passLab" placeholder="Password">
-              </div>
-              <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input remBox" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-                </div>
-              <button type="button" class="btn btn-outline-dark rounded-lg btn-login">Login</button>
-      
-              <div class="alert fade show error mt-2" style="display: none"></div>
-            </form>
-  </div> -->
-  <div class="modal infoMod fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Hello!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>To help you through the preview of the site. If you hover over titles you will see some information about the feature.</p>
-          <p>So for example, If you hover over "News Feed" on the homepage, you will be able to read some info on the "News Feed" section of the page.</p>
-          <img class="mod-prev w-100" src="./imgs/tool-priv.png" alt="">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary infoMod-btn" data-dismiss="modal">Okay</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<div class="d-flex hide-home home-page shadow-sm flex-nowrap mx-5 h-auto mx-auto">
+<div class="container home-page h-100 mx-0 mx-md-auto">
 
   <!-- PHOTO VIEWER!! -->
-    <div class="modal fade image-pop bg-dark" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade image-pop bg-dark" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl bg-dark rounded-lg">
           <div class="modal-content bg-dark">
             <img src="" class="img img-thumbnail view-image rounded-lg w-100 h-auto p-3" alt="">
@@ -99,16 +60,16 @@
       </div>
 
   <!-- FIRST SECTION! -->
-    <div class="p-3 w-50 align-self-start hashtagPanel">
-      <h3 class="text-center" data-toggle="tooltip" data-html="true" title="This 'Hashtags' panel has yet to be added but once done it will fetch and display the most popular hashtags.">Hashtags</h3>
-    </div>
+    <!-- <div class="p-3 w-100 d-none d-md-block align-self-start hashtagPanel">
+      <h3 class="text-center">Hashtags</h3>
+    </div> -->
 
     <!-- MIDDLE SECTION!  -->
-        <div class="border-left border-right border-bottom rounded-sm mx-3 p-3 w-100 bg-white main-content align-self-start">
-            <h3 class="text-center newsFeed" data-toggle="tooltip" data-html="true" title="This is pretty much self-explanatory. The 'News Feed' consists of 2 tabs. 'MyPosts' & 'Friends Posts'.">News Feed</h3>
+        <div class="border-left border-right border-bottom m-sm-0 mx-md-3 p-sm-1 p-3 bg-white main-content mx-auto">
+            <h3 class="text-center">News Feed</h3>
     
-            <div class="d-flex justify-content-center rounded-lg newPostContainer border w-100 mx-auto p-3 clearfix">
-                <div class="form-group">
+            <div class="d-flex justify-content-center rounded-lg newPostContainer border mx-auto p-3 clearfix">
+                <div class="form-group w-100">
                     <div class="userInfo clearfix">
                         <img src="" alt="" class="userPhoto rounded-circle img img-thumbnail float-left mb-2 mr-2">
                         <p class="username w-0 mt-1"></p>
@@ -117,7 +78,7 @@
                       
                       <video controls src="" width="100%" height="250px" class="img pre-post-vid rounded-lg mb-2" style="display: none"></video>
 
-                    <textarea class="form-control postBox p-2 mx-auto"  style="min-width: 100px;width:600px;" spellcheck="value" id="inputMessage" placeholder="Write a new post!"></textarea>
+                    <textarea class="form-control postBox p-2 mx-auto w-100"  style="min-width: 100px;width:600px;" spellcheck="value" id="inputMessage" placeholder="Write a new post!"></textarea>
                     
                     
                     <button id="add-pic-to-post" class="btn btn-sm bg-transparent m-0 p-0"><i class="fas fa-camera-retro m-0 mt-1" style="width:25px;height:25px;"></i></button>
@@ -131,34 +92,36 @@
                     </div>
             </div>
 
-    <ul class="nav nav-tabs nav-fill mt-3" id="homeTabs" role="tablist">
+    <ul class="nav nav-tabs nav-fill mt-3 mx-auto" id="homeTabs" role="tablist">
       <li class="nav-item">
-        <a class="nav-link fade show active" id="myposts-tab" data-toggle="tab" href="#myPosts" role="tab" aria-controls="myposts" aria-selected="true">My Posts</a>
+        <a class="nav-link fade show" id="myposts-tab" data-toggle="tab" href="#myPosts" role="tab" aria-controls="myPosts" aria-selected="true">My Posts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="friendpost-tab" data-toggle="tab" href="#friendsPosts" role="tab" aria-controls="friendpost" aria-selected="false">Friends Posts</a>
+        <a class="nav-link active" id="friendpost-tab" data-toggle="tab" href="#friendsPosts" role="tab" aria-controls="friendposts" aria-selected="false">Friends Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="news-tab" data-toggle="tab" href="#newsFeed" role="tab" aria-controls="newsFeed" aria-selected="false">Top News</a>
       </li>
     </ul>
     
     <div class="tab-content">
       <div class="tab-pane fade active" id="myPosts" role="tabpanel" aria-labelledby="myposts-tab">
         <div class="empty-1" id="postItems">
-    
         </div>
-              </div>
-      <div class="tab-pane" id="friendsPosts" role="tabpanel" aria-labelledby="friendpost-tab">
+        </div>
+      <div class="tab-pane fade" id="friendsPosts" role="tabpanel" aria-labelledby="friendpost-tab">
         <div class="empty-0" id="postItems">
-          
         </div>
-              </div>
+        </div>
+        <div class="tab-pane" id="newsFeed" role="tabpanel" aria-labelledby="newsfeed-tab">
+           <!-- NEWS FEED! -->
+      <div class="topStories" id="postItems">
+        
+      </div>
+      <p class="text-center text-wrap">Courtesy of FoxNews.com</p>
+          </div>
       </div>
     </div>
-
-     <!-- NEWS FEED! -->
-      <div class="align-self-start p-3 w-50">
-          <h3 class="text-center topStories" data-toggle="tooltip" data-html="true" title="'Top Stories' is currently an ajax call from the FoxNews website which receives the articles relation to the politics page which receives the title, article link and article thumbnail.">Top Stories</h3>
-          <p class="text-center">Courtesy of FoxNews.com</p>
-     </div>
 </div>
 
 <script type="text/javascript" src="js/bundle.js"></script></body>
